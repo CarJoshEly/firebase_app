@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'firebase_config.dart';
 import 'firestone_service.dart';
+import 'login.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Notas con Firebase',
       theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.deepPurple),
-      home: const NotesPage(),
+      home: const LoginPage(),
     );
   }
 }
@@ -215,4 +216,3 @@ class _NotesPageState extends State<NotesPage> {
     );
   }
 }
- 
